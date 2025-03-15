@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 
-app.use(`/${process.env.APP_URL_PREFIX}/character`, characterRoutes);
+app.use(`/${process.env.APP_URL_PREFIX}/person`, characterRoutes);
 app.use(`/${process.env.APP_URL_PREFIX}/sync`, syncRoutes);
 
 app.get("/", (request, response) => {
