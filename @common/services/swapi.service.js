@@ -5,7 +5,7 @@ dotenv.config();
 
 const fetchAllCharacters = async () => {
   let characters = [];
-  let nextPage = SWAPI_URL;
+  let nextPage = process.env.SWAPI_URL;
 
   while (nextPage) {
     const response = await axios.get(nextPage);

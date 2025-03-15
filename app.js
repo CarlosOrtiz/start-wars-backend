@@ -18,7 +18,7 @@ app.use(`/${process.env.APP_URL_PREFIX}/character`, characterRoutes);
 app.use(`/${process.env.APP_URL_PREFIX}/sync`, syncRoutes);
 
 app.get("/", (request, response) => {
-  const result = "Api is running";
+  const result = "🚀 Api is running";
   response.send(result);
 }).listen(PORT, () => {
   console.log(`🚀 Api running at http://localhost:${PORT}`);
